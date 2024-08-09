@@ -1,0 +1,86 @@
+body{
+    text-align: center;
+    background-color: var(--base-color);
+}
+label{
+    font-weight: bold;
+}
+p{
+    font-size: larger;
+    font-weight: bold;
+    color: brown;
+}
+
+
+#Login{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+}
+
+#Login:hover{
+    color: black;
+    background-color: lightgreen;
+}
+
+#Logout{
+    background-color: red;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#Logout:hover{
+    color: white;
+    background-color: lightcoral;
+}
+
+:root{
+    --base-color:white;
+    --base-variant:#e8e9ed;
+    --text-color: #111528;
+    --secondary-text:#232738;
+    --primary-color:#3a435d;
+    --accent-color: #0071ff;
+}
+
+.darkmode{
+    --base-color:#070b1d;
+    --base-variant:#101425;
+    --text-color: #ffffff;
+    --secondary-text:#a4a5b8;
+    --primary-color:#3a435d;
+    --accent-color: #0071ff;
+}
+#theme-switch{
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: var(--base-variant);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#theme-switch:hover{
+    background-color: white;
+}
+#theme-switch svg{
+
+    fill:var(--primary-color)
+}
+
+#theme-switch svg:last-child{
+    display: none;
+}
+
+.darkmode #theme-switch svg:first-child{
+
+    display:none;
+}
+
+.darkmode #theme-switch svg:last-child{
+    display: block;
+}
